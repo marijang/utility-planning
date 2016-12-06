@@ -1,0 +1,42 @@
+.table {
+    border: 1px solid #cbcbcb;
+    border-radius: 3px;
+    padding: 1px 0;
+    font-size: 14px;
+}
+
+caption, th {
+    font-weight: normal;
+    text-align: left;
+}
+
+.table table {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+}
+
+.table thead th {
+    background: #fff;
+    border-bottom: 1px solid #cbcbcb;
+    padding: 10px;
+    font-weight: 600;
+    color: #282c2f;
+}
+.table tbody tr:nth-child(2n) td {
+    background: #fff;
+}
+
+.table tbody {
+    background: #faf9f8;
+}
+
+.table tbody td {
+    vertical-align: middle;
+    padding: 10px;
+    height: 24px;
+}

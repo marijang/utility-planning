@@ -1,0 +1,40 @@
+{
+  "name": "breakpoint-slicer",
+  "version": "2.0.0",
+  "description": "A very quick and efficient syntax for Breakpoint",
+  "main": "stylesheets/_breakpoint-slicer.sass",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lolmaus/breakpoint-slicer.git"
+  },
+  "keywords": [
+    "breakpoint",
+    "slicer",
+    "media",
+    "query",
+    "queries",
+    "media",
+    "responsive",
+    "web",
+    "design",
+    "rwd",
+    "sass",
+    "scss",
+    "eyeglass-module"
+  ],
+  "author": "Andrey Mikhaylov (lolmaus)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lolmaus/breakpoint-slicer/issues"
+  },
+  "homepage": "https://github.com/lolmaus/breakpoint-slicer#readme",
+  "eyeglass": {
+    "exports": "eyeglass-exports.js"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.6.1"
+  }
+}

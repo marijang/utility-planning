@@ -1,0 +1,130 @@
+$type-settings: (
+  -1: (
+    font-size: 0.75rem,
+    line-height: $base-line-height
+  ),
+  0: (
+    font-size: 1rem,
+    line-height: $base-line-height
+  ),
+  1: (
+    font-size: 1.333rem,
+    line-height: $base-line-height * 2
+  ),
+  2: (
+    font-size: 1.778rem,
+    line-height: $base-line-height * 2
+  ),
+  3: (
+    font-size: 2rem,
+    line-height: $base-line-height * 2
+  ),
+  4: (
+    font-size: 2.375rem,
+    line-height: $base-line-height * 2
+  ),
+  5: (
+    font-size: 2.5rem,
+    line-height: $base-line-height * 2
+  ),
+  6: (
+  	font-size: 3rem,
+    line-height: $base-line-height * 2
+  )
+);
+
+@function type-scale($level) {
+  @return map-get(
+    map-get($type-settings, $level), 'font-size');
+}
+
+@function line-height($level) {
+  @return map-get(
+    map-get($type-settings, $level), 'line-height');
+}
+
+@mixin type-setting($level) {
+  font-size: type-scale($level);
+  line-height: line-height($level);
+}
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+$slicer-breakpoints: 0 400px 600px 800px 1050px;
+//                          └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────
+// Slice numbers:                1           2           3           4           5
+$slicer-breakpoint-names: 'xs' 's' 'm' 'l' 'xl';
+
+
+/// Block Element
+/// @access public
+/// @param {String} $element - Element's name
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+/// Block Modifier
+/// @access public
+/// @param {String} $modifier - Modifier's name
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}

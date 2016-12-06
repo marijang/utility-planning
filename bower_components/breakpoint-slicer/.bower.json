@@ -1,0 +1,54 @@
+{
+  "name": "breakpoint-slicer",
+  "version": "2.0.0",
+  "homepage": "https://github.com/lolmaus/breakpoint-slicer",
+  "authors": [
+    "lolmaus (Andrey Mikhaylov) <lolmaus@gmail.com>"
+  ],
+  "description": "A very quick and efficient syntax for Breakpoint",
+  "main": "stylesheets/_breakpoint-slicer.sass",
+  "keywords": [
+    "breakpoint",
+    "breakpoint",
+    "slicer",
+    "breakpoint-slicer",
+    "media",
+    "queries",
+    "media-queries",
+    "media",
+    "queries",
+    "media",
+    "query",
+    "media-query",
+    "query",
+    "rwd",
+    "responsive",
+    "responsive",
+    "web",
+    "design",
+    "responsive-web-design",
+    "sass",
+    "scss"
+  ],
+  "license": "MIT/GPL2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "compass-breakpoint": "^2.0.1"
+  },
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.0",
+    "commit": "db943161e8fc5954128d971366bdaa6ef0fd7ec4"
+  },
+  "_source": "https://github.com/lolmaus/breakpoint-slicer.git",
+  "_target": "~2.0.0",
+  "_originalSource": "breakpoint-slicer",
+  "_direct": true
+}
